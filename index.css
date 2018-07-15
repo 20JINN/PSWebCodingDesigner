@@ -12,17 +12,18 @@ li {list-style: none;}
 
 
 /*overall*/
-
+body{
+  /*background-color: #3f2afe;*/
+}
 a{text-decoration: none !important;}
-*{font-family: 'IBMPlexMono', sans-serif;
-  font-size: 14px;
-  word-spacing: -0.17em;
+*{
+  font-family: "Avenir","Monospaced Number","Chinese Quote",-apple-system,"BlinkMacSystemFont","Segoe UI","Roboto,PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
   line-height: 1.6em;
   margin: 0px;
   color: rgb(109, 109, 109);
 }
-
-
 ul{
   padding-left: 16px;
 }
@@ -37,36 +38,138 @@ ul{
 
 /*document*/
 
+.body-wrapper{
+  background-color: #fff;
+  overflow: scroll;
+}
 .body-container{
   width: 1060px;
   margin: 0 auto;
 }
 .header{
+  background-color: #3f2afe;
   text-align: center;
   display: inline-block;
   width: 100%;
   margin: 0 auto 48px auto;
 }
 .title{
-  font-size: 56px;
-  font-weight: thin;
-  color: rgb(84, 185, 118);
-  margin-top: 80px;
-}
-
-.summary{
-  font-size: 14px;
-  font-weight: thin;
-  color: #9176FF;
-  padding : 10px;
-}
-
-.sub-title{
+  display: inline-block;
+  width:1060px;
+  text-align: left;
   font-size: 24px;
-  font-style: italic;
-  word-spacing: -0.15em;
-  color: rgb(109, 109, 109);
-  margin: 8px auto 56px auto;
+  font-weight: bold;
+  color: #c9f42e;
+  letter-spacing: 0.5em;
+  margin: 88px auto 32px auto;
+}
+.title:hover{
+  text-decoration: red line-through;
+}
+.sub-title{
+  display: block;
+  width:1060px;
+  text-align: left;
+  font-size: 100px;
+  line-height: 120px;
+  font-weight: 900;
+  color: #0e0436;
+  background-color: #c9f42e;
+  margin: 8px auto 40px auto;
+}
+.sub-title:hover{
+  background-color: transparent;
+  color: #fff;
+}
+.guess1{
+  background-color: #9176FF;
+  width: 520px;
+  height: 384px;
+}
+.guess1:hover{
+  background-color: #9176FF;
+  transform: scale(0.0001) rotate(360deg);
+  transition: all 25s ease-out;
+}
+.guess2{
+  background-color: rgb(212, 0, 255);
+  width: 180px;
+  height: 180px;
+  display: inline-block;
+  position: absolute;
+  top: 300px;
+}
+.guess2:hover{
+  background-color: rgb(212, 0, 255);
+  width: 180px;
+  height: 180px;
+  display: inline-block;
+  position: absolute;
+  top: 300px;
+  border-radius: 90px;
+  transform: rotate(3000deg);
+  transition: all 2s ease-in;
+}
+.guess3{
+  background-color: rgb(255, 213, 27);
+  width: 240px;
+  height: 360px;
+  display: inline-block;
+  position: absolute;
+  top: 640px;
+  right: 30px;
+}
+.guess3:hover{
+  background-color: rgb(255, 213, 27);
+  width: 240px;
+  height: 360px;
+  display: inline-block;
+  position: absolute;
+  top: 540px;
+  right: 180px;
+  box-shadow: 0 40px 60px 0 rgba(0,0,0,0.39);
+  transition: all 4s ease-out;
+}
+.index-container{
+  display: inline-block;
+  height: 80px;
+  margin : 0 32px 4px 32px;
+  overflow: hidden;
+}
+.index{
+  display: block;
+  text-align: left;
+  font-size: 24px;
+  color: #929292;
+  line-height: 40px;
+}
+.index-container:hover{
+  transform: scale(1.01);
+  transition: all ease-in;
+}
+.index-inner{
+  line-height: 40px;
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin: 0 auto;
+  overflow: hidden;
+  word-wrap: break-word;
+  word-break: break-all;
+  text-overflow:ellipsis;
+}
+
+.index:after{
+  clear: both;
+  content : "";
+  display: block;
+}
+.summary{
+  color: #0e0436;
+  text-align: left;
+  font-size: 72px;
+  line-height: 120px;
+  font-weight: 900;
 }
 .btn-basic{
   display: inline-block;
@@ -88,66 +191,9 @@ a.reference-link{
   margin: 40 auto;
   display: block;
 }
-
-
-
-
-.index_container{
-   display: inline-block;
-   idth: 1060px;
-   margin : 0 auto;
-   margin-top : 30px;
-   margin-bottom : 50px;
-}
-
-.index_inner{
-  display: inline-block;
-  width: 1040px;
-  margin: 0 auto;
-}
-
-
-.index{
-  float: left;
-  width: 130px;
-  margin: 0 auto;
-}
-
-.index_title{
-  text-align: center;
-  font-weight: regular;
-  font-family: IBMPlexMono;
-  font-size: 20px;
-  color: #929292;
-  letter-spacing: -0.73px;
-  line-height: 34px;
-}
-
-.index_title_selected{
-  text-align: center;
-  font-weight: regular;
-  font-family: IBMPlexMono;
-  font-size: 20px;
-  color:black;
-  letter-spacing: -0.73px;
-  line-height: 34px;
-  text-decoration: underline;
-  text-decoration-color: #FFCBCB;
-}
-
-
-.index:after{
-  clear: both;
-  content : "";
-  display: block;
-}
-
-
 .contents{
-  padding: 24px 32px;
+  padding: 24px 0;
   margin: 16px 0;
-  border-radius: 16px;
-  background-color: rgba(254, 237, 214, 0.6);
 }
 .content-title{
   margin: 0 0 16px 0;
@@ -174,8 +220,15 @@ a.reference-link{
   display: block;
 }
 .example-code{
+  font-family: "IBMPlexMono", "UbuntuMono", monospace, serif; 
+  font-size: 14px;
   margin-bottom: 24px;
   line-height: 1.6em;
+  background-color: #c0c0c0;
+  border-radius: 8px;
+  padding: 24px 32px;
+  margin: 16px 0 ;
+  color: #fff;
 }
 .practice-container{
   padding: 24px 32px;

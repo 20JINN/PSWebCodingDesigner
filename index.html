@@ -12,185 +12,82 @@
 </head>
 
 <body>
-  <div class="body-container">
+  <div class="body-wrapper">
     <div class="header">
       <a href= "./index.html">
-           <div class="title">Welcome to Practical Studies</div>
+      <div class="title">WELCOME TO PRACTICSL STUDIES</div>
       </a>
       <div class="sub-title">Web Coding for Designers</div>
-
-      <a class="btn-basic" href="https://buzzer.anzi.kr/">Buzzer Here</a>
+      <div class="guess1"></div>
+      <div class="guess2"></div>
+      <div class="guess3"></div>
     </div>
-
-
-   <div class="contents-container">
-
-
-      <!--Day 1-->
-
-    <div class="index_container"> 
-      <ul class="index_inner">
-
-         <li class="index">
-           <a href ="./index.html"> 
-                  <div class="index_title_selected">
-                     Day1 
-                  </div>
-            </a>  
-        </li>
-
-         
-        <li class="index">
-            <a href ="./files/day2.html"> 
-                   <div class="index_title">
-                      Day2 
-                   </div>
-             </a> 
-         </li>
-
-
-         <li class="index">
-            <a href ="./files/day3.html"> 
-                   <div class="index_title">
-                      Day3
-                   </div>
-             </a>  
-         </li>
-
-         <li class="index">
-            <a href ="#"> 
-                   <div class="index_title">
-                      Day4
-                   </div>
-             </a>  
-         </li>
-
-
-         <li class="index">
-            <a href ="#"> 
-                   <div class="index_title">
-                      Day5
-                   </div>
-             </a>  
-         </li>
-
-         <li class="index">
-            <a href ="#"> 
-                   <div class="index_title">
-                      Day6
-                   </div>
-             </a>  
-         </li>
-
-
-         <li class="index">
-            <a href ="#"> 
-                   <div class="index_title">
-                      Day7
-                   </div>
-             </a>  
-         </li>
-
-         <li class="index">
-            <a href ="#"> 
-                   <div class="index_title">
-                      Day8
-                   </div>
-             </a>  
-         </li>
-
-        </ul>
+    <div class="rec2"></div>
+  <div class="body-container">
+    <div class="contents-container">
+      <!--Index-->
+      <div class="underline"></div>
+      <div class="index-container">
+        <a href="./files/day1.html">
+          <div class="index" onclick="indexOnclick">Day1. 오리엔테이션 + html/CSS </div>
+          <div class="index-inner">
+          HTML은 최초에 문서양식을 위해 고안된 Markup Language입니다.HTML의 문서는 Tag로 구성됩니다. Visual Studio Code에서 자동으로 HTML문서구조를가져오는 방법 1. 새로운 파일을 html확장자로 저장합니다. 2. html을 타이핑하면 코드힌트가 뜹니다.
+          </div>
+        </a>
+      </div>
+      <div class="underline"></div>
+      <div class="index-container">
+        <a href="./files/day2.html">
+          <div class="index">Day2</div>
+        </a>
+      </div>
+      <div class="underline"></div>
+      <div class="index-container">
+        <a href="./files/day1.html">
+          <div class="index">Day1</div>
+        </a>
+      </div>
+      <div class="underline"></div>
+      <div class="index-container">
+        <a href="./files/day1.html">
+          <div class="index">Day3</div>
+        </a>
+      </div>
+      <div class="underline"></div>
+      <div class="index-container">
+        <a href="./files/day1.html">
+          <div class="index">Day4</div>
+        </a>
+      </div>
+      <div class="underline"></div>
+      <div class="index-container">
+        <a href="./files/day1.html">
+          <div class="index">Day5</div>
+        </a>
+      </div>
+      <div class="underline"></div>
+      <div class="index-container">
+        <a href="./files/day1.html">
+          <div class="index">Day6</div>
+        </a>
+      </div>
+      <div class="underline"></div>
+      <div class="index-container">
+        <a href="./files/day1.html">
+          <div class="index">Day7</div>
+        </a>
+      </div>
+      <div class="underline"></div>
+      <div class="index-container">
+        <a href="./files/day1.html">
+          <div class="index">Day8</div>
+        </a>
+      </div>
+      <div class="underline"></div>
     </div>
-
-
-      <div class="summary">
-        Day1. 오리엔테이션 + html/CSS <br><br>
-        <a class="reference-link" href="https://htmlreference.io/">#HTML Reference</a>
-      <a class="reference-link" href="https://cssreference.io/">#CSS Reference</a>
-
-      </div>
-
-      <div class="contents">
-        <div class="content-title">&lt;Selecting specific tag&gt;</div>
-        <div class="underline"></div>
-        <div class="content-subtitle">&#9728; Select with 'Class'</div>
-        <div class="description">
-          First, define class name to a tag in html.
-          <br> And then in CSS, write down properties with
-          <span class="highlight-green-green">.Classname</span>.
-        </div>
-        <div class="example-code">
-          @html
-          <br> &lt;div class="클래스이름"&gt;Hello world&lt;/div&gt;
-          <br>
-          <br> @CSS
-          <br> .클래스이름 {
-          <br> color: red;
-          <br> background: yellow;
-          <br> }
-        </div>
-        <div class="underline"></div>
-        <div class="content-subtitle">&#9728; Select with 'Id'</div>
-        <div class="description">
-          Define id to a tag you want to select in html.
-          <br> Use
-          <span class="highlight-green">&#35;Id</span> and give some style tag in CSS.
-        </div>
-        <div class="example-code">
-          @html
-          <br> &lt;div id="아이디이름"&gt;유일한이름입니다&lt;/div&gt;
-          <br>
-          <br> @CSS
-          <br> #아이디이름 { color: blue; }
-        </div>
-      </div>
-
-      <div class="contents">
-        <div class="content-title">&lt;The 'Display' property&gt;</div>
-        <div class="description">
-          <span class="highlight-green">display</span> is CSS's most important property for controlling layout. Every element has a default display value
-          depending on what type of element it is.
-          <br> The default for most elements is usually block or inline.
-          <br> A block element is often called a block-level element and an inline element is always just called an inline element.
-        </div>
-        <div class="underline"></div>
-        <div class="content-subtitle">&#9728; inline : 현재 글줄에 이어서 표현됩니다</div>
-        <div class="example-code">
-          -display: inline
-          <br> -margin-top, margin-bottom이 적용되지 않습니다.
-          <br> -컨텐츠 고유의 사이즈로 표현됩니다.
-          <br>
-        </div>
-        <div class="content-subtitle">&#9728; block : 현재 글줄 다음에 Block단위로 표현됩니다</div>
-        <div class="example-code">
-          -display: block
-          <br> -부모 요소의 100% width를 차지합니다
-          <br> -margin이 적용됩니다
-          <br>
-        </div>
-        <div class="content-subtitle">&#9728; inline-block : 글줄에 이어서 표현하되 Block단위로 표현됩니다</div>
-        <div class="example-code">
-          -display: inline-block
-          <br> -컨텐츠 고유의 사이즈로 표현됩니다.
-          <br> -margin이 적용됩니다.
-          <br>
-        </div>
-        <div class="content-subtitle">&#9728; none : 문서에서 보이지 않게 만듭니다</div>
-        <div class="example-code">
-          -display: none
-        </div>
-      </div>
-      <div class="contents">
-        <div class="content-title">&lt;The 'Position' property&gt;</div>
-        <div class="description">
-          In order to make more complex layouts, we need to discuss the
-          <span class="highlight-green">position</span> property.
-          <br> Most of elements have 'static' value as default. It has a bunch of possible values, and their names make no sense
-          and are impossible to remember. Let's go through them one by one, but maybe you should bookmark this page too.
-        </div>
-        <div class="underline"></div>
-      </div>
-     
+  </div>
+  <script src="index.js"></script>
+</div>
 </body>
 
 </html>
