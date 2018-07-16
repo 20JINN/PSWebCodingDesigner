@@ -8,146 +8,116 @@
   <link rel="stylesheet" type="text/css" media="screen" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css"
   />
   <link rel="stylesheet" type="text/css" media="screen" href="../index.css" />
-  <script src="main.js"></script>
 </head>
 
 <body>
   <div class="body-container">
-    <div class="header">
-      <a href="../index.html">
-        <div class="title">Welcome to Practical Studies</div>
-      </a>
-      <div class="sub-title">Web Coding for Designers</div>
-
-      <a class="btn-basic" href="https://buzzer.anzi.kr/" target="_blank">Buzzer Here</a>
+    <!--Day 4-->
+    <a href= "../index.html">
+      <div class="title">BACK&lt;</div>
+    </a>
+    <div class="summary">
+      Day4. 함수 / f(x)
     </div>
-
-
-    <div class="contents-container">
-
-      <div class="index_container">
-        <ul class="index_inner">
-
-          <li class="index">
-            <a href="../index.html">
-              <div class="index_title">
-                Day1
-              </div>
-            </a>
-          </li>
-
-
-          <li class="index">
-            <a href="./day2.html">
-              <div class="index_title">
-                Day2
-              </div>
-            </a>
-          </li>
-
-
-          <li class="index">
-            <a href="./day3.html">
-              <div class="index_title">
-                Day3
-              </div>
-            </a>
-          </li>
-
-
-          <li class="index">
-            <a href="#">
-              <div class="index_title_selected">
-                Day4
-              </div>
-            </a>
-          </li>
-
-
-          <li class="index">
-            <a href="#">
-              <div class="index_title">
-                Day5
-              </div>
-            </a>
-          </li>
-
-          <li class="index">
-            <a href="#">
-              <div class="index_title">
-                Day6
-              </div>
-            </a>
-          </li>
-
-
-          <li class="index">
-            <a href="#">
-              <div class="index_title">
-                Day7
-              </div>
-            </a>
-          </li>
-
-          <li class="index">
-            <a href="#">
-              <div class="index_title">
-                Day8
-              </div>
-            </a>
-          </li>
-
-        </ul>
+    <div class="contents">
+      <div class="content-title">&lt;Function, 함수&gt;
+        <p class="writer">by.seonyu</p>
       </div>
-
-
-
-
-      <!--Day 3-->
-
-      <div class="summary">
-        Day4. 함수 / f(x)
+      <div class="underline"></div>
+      <div class="content-subtitle">&#9728; 함수(function)란 하나의 로직을 재실행 할 수 있도록 하는 것!
       </div>
-
-
-      <div class="contents">
-        <div class="content-title">&lt;Function, 함수&gt;
-          <p class="writer">by.seonyu</p>
+      <div class="description">
+        1) function은 비슷한 코드가 반복 될때,
+        <br>2) 의도적인 기능범위의 구분으로 유지보수 편의상 향상에 목적이 있습니다.
+        <br> 중학교 2학년때 처음 배우는 y=f(x), y= ax+b 일차함수의 정의, 역할과 같습니다! 아래는 function을 정의하는 기본 문법입니다.
+        <div class="example-code">
+          var 기능이름 = function() {  
+          <br>  // 기능을 호출 했을때 실행할 코드  
+          <br>  console.log("function테스트");  
+          <br>  console.log("유용하죠?");  
+          <br>  console.log("유용해요"); 
+          <br> }
         </div>
-        <div class="underline"></div>
-        <div class="content-subtitle">&#9728; 함수(function)란 하나의 로직을 재실행 할 수 있도록 하는 것!
+        <div class="comment">참고 : 원래 아래와 같은 방법으로도 사용 가능하지만 변수 선언이라는 일관된 문법을 적용하기 위해서 수업에서 아래 형태는 사용하지 않습니다.</div>
+        <div class="example-code">
+          function 기능이름() {
+          <br>  //블라블라 
+          <br> }
+        </div>
+        <div class="content-subtitle">&#9728;기능의 실행
         </div>
         <div class="description">
-          1) function은 비슷한 코드가 반복 될때,
-          <br>
-          </gr>2) 의도적인 기능범위의 구분으로 유지보수 편의상 향상에 목적이 있습니다.
-          <br>
-          <br> 중학교 2학년때 처음 배우는 y=f(x), y= ax+b 일차함수의 정의, 역할과 같습니다!
-          <br>
-          <br> var 기능 = funtion (){};
+          기능을 정의하는 것은 다른 유형의 변수를 선언하는 것과 마찬가지로 컴퓨터에게 기능을 알려주기만 한 것이지 실행한 것이 아닙니다. 기능을 실행 하려면 아래와 같이 실행 해줍니다.
+        </div>
+        <div class="example-code">
+          기능이름();
         </div>
       </div>
+    </div>
 
-
-
-
-
-      <div class="contents">
-        <div class="content-title">&lt;Parameter, 매개변수&gt;
-          <p class="writer">by.seonyu</p>
+    <div class="contents">
+      <div class="content-title">&lt;Parameter, 매개변수&gt;
+        <p class="writer">by.seonyu</p>
+      </div>
+      <div class="underline"></div>
+      <div class="content-subtitle">&#9728;매개변수는 양편에 관계를 맺어주는 변수.
+      </div>
+      <div class="description">
+        <br>매개변수(Parameter)를 활용하면 훨씬 효율적인 기능을 만들 수가 있습니다.
+        <br> Argument라고 하기도 합니다. 둘의 차이가 궁금하다면 아래 링크에서 확인 해보세요.
+        <br><a href="http://enarastudent.tistory.com/entry/함수의-아규먼트와-파라미터의-차이" class="reference-link"> 함수의 아규먼트와 파라미터의 차이</a> 
+        기능을 정의할 때 function뒤에 괄호가 있습니다. 이곳에 매개변수(Parameter)를 정의합니다.
+        <div class="example-code">
+          // 괄호에 두개의 파라미터를 받을 수 있게 정의 했습니다. 
+          <br>  var 매개변수_더하기 = function(매개변수1, 매개변수2) {  
+          <br>  // 블럭 안에서 변수처럼 사용할 수 있게 됩니다.    
+          <br>  // 매개변수 값이 무엇이 오게 될지 함수는 모릅니다. 
+          <br>  console.log(매개변수1 + 매개변수2); 
+          <br> }  
+          <br>
+          <br>  매개변수_더하기(1, 3); 
+          <br>  // console: 4 
+          <br>
+          <br>  매개변수_더하기("안", "지용"); 
+          <br>  // console: 안지용
         </div>
-        <div class="underline"></div>
-        <div class="content-subtitle">&#9728;매개변수는 양편에 관계를 맺어주는 변수.
-        </div>
-        <div class="description"></div>
-        1) 기능을 정의
-        <br> 2) 기능을 호출
-        <br>
-        <br> y = ax+b 에서 x가 매개변수. y는 return 값.
-        <br>
-        <br> 새로운 용어 / DOM : Document object model
-        <br>
-
+        <div class="comment">새로운 용어 / DOM : Document object model</div> 
+      </div>
+    </div>
+    <div class="contents">
+      <div class="content-title">
+        &lt;참고&gt;
+      </div>
+      <div class="underline"></div>
+      <div class="content-subtitle">
+        &#9728; 참고 1. 함수에서 실행된 결과를 반환하는 방법 <span class="highlight-blue">return</span>
+      </div>
+      <div class="description">
+        특정 기능을 수행하고 결과 값을 다시 활용할 수 있게 해줍니다. 기능의 재사용성이 높아질 확률이 있습니다.
+      </div>
+      <div class="example-code">
+        var 매개변수_두개를_더하는_기능 = function (매개변수1, 매개변수2) {  
+        <br>  return 매개변수1 + 매개변수2; 
+        <br>}  
+        <br>  
+        <br>// 반환된 값을 새로운 변수에 담아둡니다. 
+        <br>var 리턴받은값 = 매개변수_두개를_더하는_기능(2, 3); 
+        <br>  
+        <br>console.log("리턴받은값 : " + 리턴받은값)
+      </div>
+      <div class="content-subtitle">
+        &#9728; 참고 2. function 안에 선언된 변수는 해당 블럭 안에서만 참조할 수 있습니다.
+      </div>
+      <div class="example-code">
+          var 테스트 = function() {  
+        <br>    var 테스트변수 = "안녕?";  
+        <br>    console.log(테스트변수);  
+        <br>    // 결과 "안녕?" 
+        <br>  }   
+        <br><br>  // function 바깥에서 참조하면...? 
+        <br><br>  console.log(테스트변수); 
+        <br>  // 결과 undefined
+        <br>  
       </div>
     </div>
 
@@ -158,7 +128,7 @@
       <div class="underline"></div>
       <div class="content-subtitle">&#9728;몽타쥬예시! 여기서 '이름'은 key, "안지용"은 value.
       </div>
-      <div class="description">
+      <div class="example-code">
         var 나 = {
         <br> 이름 : "안지용",
         <br> 신장 : 186
@@ -185,32 +155,26 @@
         <br> }
         <br>
         <br> 몽타쥬그려주는기계(승);
+        </div>
+        <div class="description">
         <br> > 몽타쥬그려주는기계({이름: "손흥민", 신장: 183});
         <br> 오브젝트에 바로 넣을 수 있음.
         <br>
       </div>
     </div>
-
-
-
-
-
     <div class="practice-container">
       <div class="content-title">&lt;Let's practice!&gt;
         <p class="writer">by.seonyu</p>
       </div>
-
-      <div class="content-subtitle">&#9728;빗변예시 : 피타고라스의 정리를 알아야.. ㅎㅅㅎ
+      <div class="content-subtitle">&#9728;빗변예시1 : 피타고라스의 정리를 알아야.. ㅎㅅㅎ
       </div>
-
-      <div class="description">
-        <br>var 빗변구하는기계 = function (가로길이, 세로길이) {
+      <div class="example-code">
+        var 빗변구하는기계 = function (가로길이, 세로길이) {
         <br> var a_sqr = 가로길이 * 가로길이 // 제곱
         <br> var b_sqr = 세로길이 * 세로길이 // 제곱
         <br> var c = Math.sqrt(a_sqr + b_sqr) // 루트 값
         <br> return c
         <br> }
-        <br>
         <br>
         <br> var 사각형들 = [
         <br> { width: 100, height: 50 },
@@ -219,29 +183,48 @@
         <br> { width: 200, height: 100 }
         <br> ]
         <br>
-        <br>
         <br>var 빗변들 = [];
         <br>
+        <br> for (var 순서 = 0; 순서 < 사각형들.length; 순서++) { 
+        <br> var 빗변 = 빗변구하는기계(사각형들[순서].width, 사각형들[순서].height)
+        <br> // push는 새로운 값을 Array에 집어 넣습니다.
+        <br> 빗변들.push(빗변)
+        <br> }
         <br>
-        <br> for (var 순서 = 0; 순서
-        < 사각형들.length; 순서++) { <br> var 빗변 = 빗변구하는기계(사각형들[순서].width, 사각형들[순서].height)
-          <br>
-          <br> // push는 새로운 값을 Array에 집어 넣습니다.
-          <br> 빗변들.push(빗변)
-          <br> }
-          <br>
-          <br>
-          <br> console.log(빗변들);
-          <br> var 최대거리 = Math.max.apply(null, 빗변들)
+        <br> console.log(빗변들);
+        <br> var 최대거리 = Math.max.apply(null, 빗변들)
+      </div>
+      <div class="content-subtitle">&#9728;빗변예시2 : 오브젝트를 활용한 function</div>
+      <div class="example-code">
+        var 빗변구하는기계2 = function (오브젝트) {
+        <br>  var a_sqr = 오브젝트.width * 오브젝트.width // 제곱
+        <br>  var b_sqr = 오브젝트.height * 오브젝트.height // 제곱
+        <br>  return Math.sqrt(a_sqr + b_sqr) // 루트 값
+        <br>  }
+        <br>  var 사각형 = { width: 100, height: 200 };
+        <br>  빗변구하는기계2(사각형);
+      </div>
+    </div>
+    <div class="check-container">
+      <div class="content-title">&lt;Check this out!&gt;<p class="writer">by.Youngjin</p></div>
+      <div class="underline"></div>
+      <div class="description">
+        이번엔 요소들을 화면 여기저기에 position을 랜덤으로 뿌려주는걸 만들어보았어요.
+      <br>  제가 찾은 함수는 <span class="highlight-blue">Math.random()</span>이라는건데요, 이걸 쓰면 0-1사이의 수를 랜덤으로 뿌려준다고합니다.
+      <br>  랜덤 숫자를 뽑는 generateRandom() 함수를 만들고, 이걸 요소들의 css에 적용하는 randomStyle()이라는 함수를 만들어 for loop 돌렸습니다.
+      <br>  만들며 고민했지만 잘 안됐던 부분들..은 다음과같습니다.(거의 다 안됨)
+      <div class="example-code">
+        - 처음에는 생각없이 제 모니터 전체화면 "고정값"을 최대값(px)으로 생각하고 함수를 만들었는데 창 크기 줄이면 배경 밖으로 나갑니다(당연)
+        <br> ==>  generateRandom return값에 * 100을 한 뒤( 0 - 100 ), stylesheet에 넣고 "vh/vw" 단위를 적용했습니다.
+        <br><br>  - 폰트 사이즈는 12-30으로 제한했는데, 어레이에 들어있는 요소의 string 길이가 다 다르고, font도 랜덤인데다, absolute top/left값은 좌 상단 기준입니다. 예를 들어 left: 99vw;면 웬만한건 다 튀어나가버립니다.
+        <br> ==> 대~충 90vw 안넘어가게 했는데 넘나 찝찝한것
+        <br><br>  - 처음엔 id 담은 array 안만들고, 그냥 전부 다 &lt;div class="contributor"&gt;로 묶은 뒤, contributor[i].style로 함수 만들려고했는데 안되더라고요. 찾아보니 getElementByClassName은 html collection이고- 이걸 array또는 object로 만들려면 query로 어떻게 저떻게 한다던데, javascript만으로도 할 수 있을것 같은 근거없는 자신감에 난리치다 결국에 포기ㅎ
+        <br><br>  - 또.. 진짜 많았는데 이거 진짜 며칠동안 엄청 썼다지웠다 한건데 다 까먹었네요. 혹시 이걸 보시는 분은 <span class="highlight-blue">Math.random()</span>만 알고가시면됩니다(눈물)<br><br>
+        <a href="../functions/randomfunction.html" class="reference-link">눈물만_남은_Math.random()</a>
+      </div>
       </div>
     </div>
 
-
-
-
-  </div>
-  </div>
-  </div>
   </div>
 </body>
 

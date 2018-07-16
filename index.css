@@ -40,7 +40,6 @@ ul{
 
 .body-wrapper{
   background-color: #fff;
-  overflow: scroll;
 }
 .body-container{
   width: 1060px;
@@ -84,7 +83,9 @@ ul{
 .guess1{
   background-color: #9176FF;
   width: 520px;
-  height: 384px;
+  height: 442px;
+  display: inline-block;
+  float: left;
 }
 .guess1:hover{
   background-color: #9176FF;
@@ -98,6 +99,7 @@ ul{
   display: inline-block;
   position: absolute;
   top: 300px;
+  transform: rotate(45deg);
 }
 .guess2:hover{
   background-color: rgb(212, 0, 255);
@@ -129,6 +131,30 @@ ul{
   right: 180px;
   box-shadow: 0 40px 60px 0 rgba(0,0,0,0.39);
   transition: all 4s ease-out;
+}
+.btn-basic{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 100px;
+  color: #fff;
+  background-color: #ff2828;
+  margin: 0px auto;
+  position: absolute;
+  top: 500px;
+  left: 500px;
+}
+.btn-basic:hover{
+  box-shadow: 0 -5px 40px 0 rgba(0,0,0,0.39);
+  transform: rotate(12600deg);
+  transition: all 1s;
+}
+.contributors div{
+  color: rgb(44, 33, 199);
+  font-weight: 900;
 }
 .index-container{
   display: inline-block;
@@ -171,18 +197,6 @@ ul{
   line-height: 120px;
   font-weight: 900;
 }
-.btn-basic{
-  display: inline-block;
-  width: 200px;
-  height: 40px;
-  border-radius: 20px;
-  text-align: center;
-  font-weight: 500;
-  line-height: 40px;
-  color: #fff;
-  background-color: #4d8bfd;
-  margin: 0px auto;
-}
 
 a.reference-link{
   font-weight: 500;
@@ -192,7 +206,7 @@ a.reference-link{
   display: block;
 }
 .contents{
-  padding: 24px 0;
+  padding: 24px 16px;
   margin: 16px 0;
 }
 .content-title{
@@ -224,23 +238,23 @@ a.reference-link{
   font-size: 14px;
   margin-bottom: 24px;
   line-height: 1.6em;
-  background-color: #c0c0c0;
-  border-radius: 8px;
+  background-color: #f1f3f5;
+  border-radius: 4px;
   padding: 24px 32px;
   margin: 16px 0 ;
-  color: #fff;
+  display: block;
 }
 .practice-container{
   padding: 24px 32px;
   margin: 16px 0;
   border-radius: 16px;
-  background-color: rgb(237, 243, 249);
+  background-color: #fafcff;
 }
 .check-container{
   padding: 24px 32px;
   margin: 16px 0;
   border-radius: 16px;
-  background-color: rgb(243, 243, 243);
+  background-color: #f9f9f9;
 }
 .sub-contents-container{
   display: flex;
@@ -276,12 +290,20 @@ a.reference-link{
 
 
 /*shapes*/
-
+#margin-ex-container{
+  display: flex;
+  width: 100%;
+}
+#margin-ex-code{
+  display: flex;
+  margin-left: 24px;
+  width:754px;
+}
 .margin-ex1{
   position: relative;
   display: inline-block;
   width: 310px;
-  margin-top: 32px;
+  margin-top: 16px;
 }
 .margin-top-ex{
   border: 2px solid rgba(255, 93, 241, 0.8);
@@ -314,21 +336,21 @@ a.reference-link{
 }
 .rec4, .rec6 {
   width: 30px;
-  height: 80px;
+  height: 138px;
   border-left: 3px solid rgba(83, 172, 255, 0.808);
   border-right: 3px solid  rgba(83, 172, 255, 0.808);
   background-color: rgba(83, 172, 255, 0.308);
   display: inline-block;
   float: left;
   text-align: center;
-  line-height: 80px;
+  line-height: 138px;
 }
 .rec4{
   margin-left: 2px;
 }
 .rec5{
   width: 228px;
-  height: 80px;
+  height: 138px;
   display: inline-block;
   background-color: rgba(107, 115, 126, 0.3);
   float: left;
