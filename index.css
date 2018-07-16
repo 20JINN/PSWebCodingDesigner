@@ -93,7 +93,7 @@ ul{
   transition: all 25s ease-out;
 }
 .guess2{
-  background-color: rgb(212, 0, 255);
+  background-color: #ff4700;
   width: 180px;
   height: 180px;
   display: inline-block;
@@ -141,11 +141,11 @@ ul{
   font-weight: 500;
   line-height: 100px;
   color: #fff;
-  background-color: #ff2828;
+  background-color: #07061d;
   margin: 0px auto;
   position: absolute;
-  top: 500px;
-  left: 500px;
+  top: 650px;
+  left: 510px;
 }
 .btn-basic:hover{
   box-shadow: 0 -5px 40px 0 rgba(0,0,0,0.39);
