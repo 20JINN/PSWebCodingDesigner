@@ -22,11 +22,6 @@ for (var 순서 = 0; 순서 < 커피종류.length; 순서++){
 
 // 컨테이너.innerHTML = 들어갈요소 + ("커피종류 개수:" + 커피종류.length + "개");
 
-
-
 console.log("hello world");
-
 console.log("First Start");
-
-
 var 오오 = ["올","좋당"]
