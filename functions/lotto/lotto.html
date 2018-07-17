@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>lotto example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        .lottopush {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            color: white;
+        }
+        div {
+            margin : 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <h1>로또 연습(No random)</h1>
+
+        <div class= "button_area">
+            <button class="lottopush">정해진 로또 번호 만들기</button>
+        </div>
+
+        <h4>로또 숫자</h4> <span>* 누른 후 3초 뒤에 새로고침 됩니다.</span>
+        <div class = "number_area">  </div>
+
+        <hr>
+
+        <div class= "button_area">
+                <button class="lottopush">랜덤 로또 번호 만들기</button>
+            </div>
+
+        <h4>로또 숫자</h4> <span>* 누른 후 1초 뒤에 새로고침 됩니다.</span>
+            <div class = "number_area">  </div>
+    </div>
+
+    
+
+    <script>
+    
+        // 6개의 번호가 있음. 로또 번호를 하나씩 내놓는 기계를 만듬(펑션, 반복문), 그걸 한 통에 담아서 보여줌. 
+        var lotto_number = [3,4,5,6,10,22];
+        var 당첨내역 = [];
+        var machine = function (number) {
+            for (var order = 0; order < number.length; order++) {
+                var machined_number = number[order]
+                 당첨내역.push(machined_number)    
+            }
+            return 당첨내역;
+        }
+
+
+        // button이벤트 생성(일반 숫자)
+      var button = document.querySelectorAll(".lottopush");
+      var blank = "";
+      var number_area = document.getElementsByClassName("number_area");
+
+        button[0].addEventListener("click",function(){
+            number_area[0].innerHTML = blank + machine(lotto_number);
+            setTimeout("location.reload()", 4000);
+        })
+      
+        // 6개의 난수 생성
+        var randomMachine = function (min, max) {
+            var blankArray=[];
+            for (var order = 0; order < 6; order ++){ 
+                var ranNumber = Math.floor(Math.random()*(max-min+1)) + min;
+                blankArray.push(ranNumber);
+            }
+           return blankArray;
+        }
+       
+        // 랜덤 로또를 위한 함수 수정
+          var machine_edit = function (number) {
+            for (var order = 0; order < number.length; order++) {
+                var machined_number = number[order]
+                 당첨내역.push(machined_number)    
+            }
+            return 당첨내역;
+        }
+
+        // button 이벤트 생성(랜덤 숫자))
+        button[1].addEventListener("click",function(){
+            
+            var lotto_random = [];
+            lotto_random.push(randomMachine(1,45));
+            number_area[1].innerHTML = blank + machine_edit(lotto_random);
+            setTimeout("location.reload()", 1000);
+        })
+    </script>
+      
+</body>
+</html>
