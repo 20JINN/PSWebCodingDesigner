@@ -88,8 +88,10 @@
         // button 이벤트 생성(랜덤 숫자))
         button[1].addEventListener("click",function(){
             
-            var lotto_random = [];
-            lotto_random.push(randomMachine(1,45));
+            var lotto_random = randomMachine(1,45);
+
+            // lotto_random.push(randomMachine(1,45));
+
             number_area[1].innerHTML = blank + machine_edit(lotto_random);
             setTimeout("location.reload()", 1000);
         })
