@@ -9,7 +9,14 @@
 a {text-decoration: none;}
 li {list-style: none;}
 
-
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 20px;
+  font-weight:500;
+}
 
 /*overall*/
 body{
@@ -190,7 +197,7 @@ ul{
   content : "";
   display: block;
 }
-.summary{
+.summary_title{
   color: #0e0436;
   text-align: left;
   font-size: 72px;
@@ -287,6 +294,12 @@ a.reference-link{
   display: inline-block;
 }
 
+header {
+  margin : 20px 0 20px 0;
+}
+footer {
+  margin-top: 20px;
+}
 
 
 /*shapes*/
