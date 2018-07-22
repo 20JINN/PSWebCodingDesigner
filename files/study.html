@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,92 +17,136 @@
             background-color: black;
             color: white;
         }
-        .description, .problem-title, .answer, .section, .problem {
-            margin-top : 30px;
+
+        .description,
+        .problem-title,
+        .answer,
+        .section,
+        .problem {
+            margin-top: 30px;
         }
-        .problem-title, .section {
+
+        .problem-title,
+        .section {
             font-weight: 700;
         }
     </style>
 </head>
+
 <body>
-        <div class="body-container">
-                <div class="contents-container">
-                  <!--Day 3-->
-                  <a href= "../index.html">
-                    <div class="title">BACK&lt;</div>
-                  </a>
-                  <div class="summary">
-                    복습 study 과제
-                  </div>
-            
-                  <div class="contents">
-                    <div class="content-title">function과 array 등 배운 것 서로에게 문제 내주기.
-                      <p class="writer">by.seung</p>
-                    </div>
-                    <div class="underline"></div>
-                    <div class="content-subtitle">&#9728; Mission : 당첨번호 확인 버튼을 누르면 조합된 당첨 번호가 나옴
-                    </div>
-                    <div class="content-subtitle">
-                            1) 주어진 번호 : 10가지 아무거나, 5개 건지기?<br>
-                            2) 각 당첨번호는 10가지 숫자를 연산 (from 근영)
-                    </div>
-                    <div class="description">
-                            <div>
-                                    <h2 class= "title">답</h2>
-                                    <button class="select">버튼!</button>
-                                    <div class="description">n번째와 어레이.length - (n-1)번째 숫자를 합칩니다. ex) 1번째와 10번째 숫자 합치기</div>
-                            
-                                    <div class="problem-title">만들어진 랜덤 숫자들</div>
-                                    <div class="problem"></div>
-                                    
-                                    <div class="section">합해진 숫자들</div>
-                                    <div class="answer"></div>
-                                </div>
-                    </div>
-                  </div> 
-                 
+    <div class="body-container">
+        <div class="contents-container">
+            <!--Day 3-->
+            <a href="../index.html">
+                <div class="title">BACK&lt;</div>
+            </a>
+            <div class="summary">
+                복습 study 과제
+            </div>
+
+            <div class="contents">
+                <div class="content-title">function과 array 등 배운 것 서로에게 문제 내주기.
+                    <p class="writer">by.seung</p>
                 </div>
-              </div>
-              </div>
-              </div>
-<!-- 자바스크립트 -->
+                <div class="underline"></div>
+                <div class="content-subtitle">&#9728; Mission : 당첨번호 확인 버튼을 누르면 조합된 당첨 번호가 나옴
+                </div>
+                <div class="content-subtitle">
+                    1) 주어진 번호 : 10가지 아무거나, 5개 건지기?
+                    <br> 2) 각 당첨번호는 10가지 숫자를 연산 (from 근영)
+                </div>
+                <div class="description">
+                    <div>
+                        <h2 class="title">답</h2>
+                        <button class="select">버튼!</button>
+                        <div class="description">n번째와 어레이.length - (n-1)번째 숫자를 합칩니다. ex) 1번째와 10번째 숫자 합치기</div>
+
+                        <div class="problem-title">만들어진 랜덤 숫자들</div>
+                        <div class="problem"></div>
+
+                        <div class="section">합해진 숫자들</div>
+                        <div class="answer"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="body-container">
+        <div class="contents-container">
+
+            <div class="contents">
+                <div class="content-title">function과 array 등 배운 것 서로에게 문제 내주기.
+                    <p class="writer">by.seung</p>
+                </div>
+                <div class="underline"></div>
+                <div class="content-subtitle">&#9728; Mission : 당첨번호 확인 버튼을 누르면 조합된 당첨 번호가 나옴
+                </div>
+                <div class="content-subtitle">
+                    1) 주어진 번호 : 10가지 아무거나, 5개 건지기?
+                    <br> 2) 각 당첨번호는 10가지 숫자를 연산 (from 근영)
+                </div>
+                <div class="description">
+                    <div>
+                        <h2 class="title">답</h2>
+                        <button class="select">버튼!</button>
+                        <div class="description">n번째와 어레이.length - (n-1)번째 숫자를 합칩니다. ex) 1번째와 10번째 숫자 합치기</div>
+
+                        <div class="problem-title">만들어진 랜덤 숫자들</div>
+                        <div class="problem"></div>
+
+                        <div class="section">합해진 숫자들</div>
+                        <div class="answer"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    </div>
+    </div>
+    <!-- 자바스크립트 -->
     <script>
         var button = document.querySelectorAll(".select");
         var blank = "";
         var problem = document.getElementsByClassName("problem");
         var answer = document.getElementsByClassName("answer");
-        var edittedlist= [];
+        var edittedlist = [];
         // 10개의 난수 생성
-           var randomMachine = function (min, max) {
-            var blankArray=[];
-            for (var order = 0; order < 10; order ++){ 
-                var ranNumber = Math.floor(Math.random()*(max-min+1)) + min;
+        var randomMachine = function (min, max) {
+            var blankArray = [];
+            for (var order = 0; order < 10; order++) {
+                var ranNumber = Math.floor(Math.random() * (max - min + 1)) + min;
                 blankArray.push(ranNumber);
             }
             console.log(blankArray);
-           return blankArray;
+            return blankArray;
         }
-        
-           // 난수 두개를 더해서 5개를 만드는 함수 만들기
-           var number_plus = function (number) {
-               console.log(number.length);
-            for (var order = 0; order < (number.length)/2; order++) {
+
+        // 난수 두개를 더해서 5개를 만드는 함수 만들기
+        var number_plus = function (number) {
+            console.log(number.length);
+            for (var order = 0; order < (number.length) / 2; order++) {
                 // NaN 문제가 생겼었음. number.length는 10으로 잡혀서 문제가 되는거였음. 어레이는 0~9까지니까 -1을 해줘야함.
                 // parseInt()는 괄호 안에 들어가는 숫자나 문자로 된 숫자를 정수화 시켜줌.
-                var machined_number = number[order] + number[number.length-1-order]
-                 edittedlist.push(machined_number)  
-           
+                var machined_number = number[order] + number[number.length - 1 - order]
+                edittedlist.push(machined_number)
+
             }
-           
+
             console.log(edittedlist);
             return edittedlist;
-           }
-            //   버튼 이벤트
-        
-               button[0].addEventListener("click",function(){
-            
-            var number_array = randomMachine(1,30);
+        }
+        //   버튼 이벤트
+
+        button[0].addEventListener("click", function () {
+
+            var number_array = randomMachine(1, 30);
             problem[0].innerHTML = number_array;
             answer[0].innerHTML = blank + number_plus(number_array);
             // 7초 뒤에 새로고침
@@ -111,4 +155,5 @@
 
     </script>
 </body>
+
 </html>
