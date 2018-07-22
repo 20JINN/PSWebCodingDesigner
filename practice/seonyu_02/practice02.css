@@ -1,0 +1,248 @@
+/*-------------
+ CSS RESET 
+--------------*/
+
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+body {
+}
+
+/*-------------
+index
+--------------*/
+
+ul {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  display:flex;
+  justify-content: center;
+}
+
+.index {
+  padding: 20px;
+}
+
+.index_title {
+  text-align: center;
+  font-weight: regular;
+  font-family: IBMPlexMono;
+  font-size: 13px;
+  color: #929292;
+  letter-spacing: -0.73px;
+  line-height: 34px;
+}
+
+#selected {
+  font-weight: 800;
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: #ffcbcb;
+}
+
+
+
+/*-------------
+버튼 호버시, "어서 눌러주세요" 라는 멘트가 버튼 밑에 뜬다.
+버튼을 누르면, 계속 숫자가 바뀐다.
+숫자 중에 "34"가 나오면 "당첨되셨습니다." 라는 멘트의 팝업이 뜬다. (from 예지)
+--------------*/
+
+.date_container {
+  text-align: center;
+  width: 1200px;
+}
+
+.date {
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  width: 1200px;
+  margin-top: 40px;
+}
+.date_des {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  opacity: 0.5;
+}
+
+.galleryZone {
+  position: relative;
+  margin: 0 auto;
+  width: 1000px;
+  height: 540px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #fbf6f6;
+}
+
+.btn {
+  border-radius: 100px;
+  position: relative;
+  width: 140px;
+  height: 140px;
+  background-color: #e95958;
+  box-shadow: 0 12px 16px 0 rgba(233, 89, 88, 0.37);
+}
+
+.btn_inner {
+  border-radius: 100px;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+}
+
+.btn_text {
+  top: 18px;
+  left: 20px;
+  position: absolute;
+  font-size: 40px;
+}
+
+.btn_container {
+  position: absolute;
+  top: 80px;
+  left: 30px;
+  text-align: center;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.alarm {
+  line-height: 1.5;
+  padding-bottom: 30px;
+  opacity: 0;
+  font-size: 18px;
+  text-align: center;
+  color: #e95958;
+  transition: all 1s ease-in-out;
+}
+
+.btn_container:hover .alarm {
+  opacity: 1;
+}
+
+/*---hvr-pulse-grow-----*/
+
+@-webkit-keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+#hvr-pulse-grow {
+  box-shadow: 0 12px 16px 0 rgba(233, 89, 88, 0.37);
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+}
+#hvr-pulse-grow:hover,
+#hvr-pulse-grow:focus,
+#hvr-pulse-grow:active {
+  box-shadow: 0 12px 16px 0 rgba(233, 89, 88, 0.37);
+  -webkit-animation-name: hvr-pulse-grow;
+  animation-name: hvr-pulse-grow;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+/*--------*/
+
+.result_container {
+  position: absolute;
+  top: 320px;
+  width: 1000px;
+}
+#result {
+  font-family: IBMPlexMono;
+  font-size: 100px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  text-shadow: 0 7px 9px rgba(0, 0, 0, 0.5);
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  border-radius: 10px;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 600px;
+  height: 400px;
+}
+
+.modal_text {
+  padding-top: 60px;
+  text-align: center;
+  font-size: 24px;
+  width: 600px;
+}
+
+.modal_img {
+  width: 400px;
+  padding-top: 30px;
+  padding-left: 100px;
+  text-align: center;
+  display: block;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
