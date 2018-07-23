@@ -233,6 +233,15 @@ a.reference-link {
   margin: 40 auto;
   display: block;
 }
+
+a.reference-link-sub {
+  font-weight: 300;
+  font-size: .8em;
+  color: #4d8bfd;
+  margin: 40 auto;
+  display: block;
+}
+
 .contents {
   padding: 24px 16px;
   margin: 16px 0;
