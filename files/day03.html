@@ -7,18 +7,91 @@
   <title>PS_WebCodingDesigner</title>
   <link rel="stylesheet" type="text/css" media="screen" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css"
   />
-  <link rel="stylesheet" type="text/css" media="screen" href="../index.css" />
-  <script src="main.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="../index.css">
 </head>
 
 <body>
-  <div class="body-container">
-    <div class="contents-container">
-      <!--Day 3-->
-      <a href= "../index.html">
-        <div class="title">BACK&lt;</div>
+
+  <!--header-->
+  <header class="header_gn">
+
+    <!--Index-->
+
+
+    <div class="index-container">
+      <a href="../index.html">
+        <div class="index">Home</div>
+        <div class="index-inner">환영합니다!</div>
+    </div>
+    </a>
+    </div>
+
+
+    <div class="index-container">
+      <a href="../files/day01.html">
+        <div class="index">Day1</div>
+        <div class="index-inner">오리엔테이션 + html/CSS</div>
       </a>
-      <div class="summary">
+    </div>
+
+    <div class="index-container">
+      <a href="../files/day02.html">
+        <div class="index">Day2</div>
+        <div class="index-inner">Basic CSS Outline2</div>
+      </a>
+    </div>
+    <div class="index-container">
+      <a href="#">
+        <div class="index">Day3</div>
+        <div class="index-inner">Basic javascript</div>
+
+      </a>
+    </div>
+    <div class="index-container">
+      <a href="../files/day04.html">
+        <div class="index">Day4</div>
+        <div class="index-inner">함수 / f(x)</div>
+      </a>
+    </div>
+
+    <div class="index-container">
+      <a href="../files/day05.html">
+        <div class="index">Day5</div>
+        <div class="index-inner">jQuery</div>
+      </a>
+    </div>
+
+    <div class="index-container">
+      <a href="#">
+        <div class="index">Day6</div>
+      </a>
+    </div>
+    <div class="index-container">
+      <a href="#">
+        <div class="index">Day7</div>
+      </a>
+    </div>
+    <div class="index-container">
+      <a href="#">
+        <div class="index">Day8</div>
+      </a>
+    </div>
+
+    <div class="index-container">
+      <a href="../files/study.html">
+        <div class="index">Study</div>
+      </a>
+    </div>
+    <!-- 콘텐츠 콘테이너 끝 -->
+  </header>
+
+
+  <div class="wrapper" id="wrapper_bg">
+    <div class="clearfix">
+    </div>
+    <div class="body_container">
+
+      <div class="summary_title">
         Day3.Basic javascript
       </div>
 
@@ -214,7 +287,7 @@
           </ul>
         </div>
       </div>
-      
+
       <div class="practice-container">
         <div class="content-title">&lt;Let's practice!&gt;
           <p class="writer">by.@@@</p>
@@ -237,15 +310,38 @@
           <br> 2. onClick되면 showCoffeeStory함수를 호출하도록 한다
           <br> 3. 함수가 불리면 1~n의 숫자가 나와서 Array[Index]로 배열 안에 있는 element에 접근해서 그때마다 coffeeContent의 innerHtml을 바꿔준다
         </div>
-        <a class="reference-link" href="../coffee/coffee.html" target="_blank">#Javascript practice</a>
+        <a class="reference-link" href="../practice/youngjin_01/coffee.html" target="_blank">#Javascript practice</a>
         <div class="comment">위 링크에 들어가시면 inspector를 켜고 source탭을 누른 뒤, coffee.html과 coffee.js를 번갈아보며 어떤 div에 어떤 함수가 적용되었는지 살펴보세요!</div>
+      </div>
+
+      <div class="check-container">
+        <div class="content-title">&lt;Check this out!&gt;
+          <p class="writer">by.Youngryun</p>
+        </div>
+        <div class="underline"></div>
+        <div class="description">
+          안녕하세요! 비록 지금은 5주차 수업이 끝난 시기이지만ㅎㅎ 깃헙.. 꼭 참여하고싶었습니다.
+          <br>3주차 수업 내용인 for loop와 if의 예제를 응용한, 여러 도움을 받아 작성한 연습페이지입니다.
+          <br>
+          <br>1. for loop의 커피예제를 영화 제목으로...
+          <br>2. if문의 토글버튼을 변형해서 제목을 누르면 배경색, 글자색, 이미지 변경
+          <br><span style="font-size: 12px">*이걸 만들던 당시에는 여러개의 key와 value를 가지고 있는 오브젝트들을 어레이 안에 넣어서 하나의 오브젝트로 지정하고, for 문이 실행됨에 따라 각 순서의 오브젝트의 value를 가져오도록 한 것이 큰 깨달음이었습니다!!@.@</span>
+          <br><span style="font-size: 12px">*또 '토글'을 '클릭'으로 바꾸는 방법도..!</span>
+        </div>
+        <a class="reference-link" href="../practice/youngryun_01/index.html" target="_blank">#Movie-show-window</a>
+        <div class="comment">링크를 타고 나오는 페이지에서 영화제목을 눌러보세요!
+          <br>저는 처음에 여기에 링크를 걸려면 페이지가 있어야하는 줄 알고.. 페이지도 만들었습니다. >_<아까우니 링크라도 걸어둘게요 ㅎㅎ
+        </div>
+        <a class="reference-link-sub" href="https://youngryuncho.github.io/movie-show-window/" target="_blank">https://youngryuncho.github.io/movie-show-window/</a>
       </div>
 
 
     </div>
+
   </div>
   </div>
   </div>
+
 </body>
 
 </html>
