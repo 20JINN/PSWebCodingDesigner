@@ -77,7 +77,7 @@
         <div class="index">Study</div>
       </a>
     </div>
-    <!-- 콘텐츠 콘테이너 끝 -->
+    <!-- index 콘테이너 끝 -->
   </header>
 
 
@@ -88,27 +88,57 @@
       <div class="summary_title">
         Day5. jQuery
       </div>
-      <div class="contents">
-        <div class="content-title">&lt;jQuery&gt;
-          <p class="writer">by.seonyu</p>
-        </div>
-        <div class="underline"></div>
-        <div class="content-subtitle">&#9728; DOM(Document Object Model) 조작을 편하게 해주는 라이브러리 + α
-        </div>
-        <div class="description">
-          1) 깐 양파.. ? ㅎㅎ 같아요
-          <br>2) 제이쿼리는 모든게 function으로 정의되어 있습니다
-          <br>
-          <div class="example-code">
-            f$("#아이디이름")
-            <br> $(".클래스이름")
-            <br> $("태그이름")
+      <!-- article 시작 -->
+      <article>
+        <!-- contents 섹션 시작 -->
+        <section class="contents">
+          <header class="content-title">&lt;jQuery&gt; <p class="writer">by.Seonyu, Seung</p></header>
+          <div class="underline"></div>
+          <div class="content-subtitle">
+            &#9728; DOM(Document Object Model) 조작을 편하게 해주는 라이브러리 + α
           </div>
-        </div>
-      </div>
+          <div class="description">
+              <header>
+                  <h3>jQuery 설치하기</h3>
+                </header>
 
-      <!-- body 컨테이너 끝 -->
+            <section>
+              <p class="content-subtitle">설치할 수 있는 사이트</p>
+              <p> <a href="https://developers.google.com/speed/libraries/" class="underline">google api library (CDN 용)</a></p>
+              <p> <a href="https://code.jquery.com/jquery/" class="underline">jquery 공식 사이트 (다운로드 용)</a> </p>   
+
+              <p class="content-subtitle">사용법</p>    
+              <p>jQuery에서는 $표시를 기본적으로 사용한다.</p>
+              <p>또한 모든 것이 javascript function으로 정의되어 있다.</p>
+              <code class="example-code">
+                  $("#아이디이름")  /* html 상에서 #id로 정의한 것을 지칭할 때 사용한다. */
+                  <br> $(".클래스이름") /* html 상에서 .class로 정의한 것을 지칭할 때 사용한다. */
+                  <br> $("태그이름") /* html 상에서 tag로 정의한 것을 지칭할 때 사용한다. */
+              </code>
+              <p class="content-subtitle">예시</p>
+              <!-- kbd 태그 = 유저가 취할 수 있는 input을 문자 그대로 알려줄때 쓰는 태그, 예를들어 ctrl+s를 누르세요라고 할 때 씀. -->
+              <kbd class="example-code">
+                <!-- pre태그 = 줄바꿈,공백 그대로 보여주는 태그 -->
+                <p>html</p>
+                 &lt;input id="todo-input" type="text" &gt; <br>
+                  &lt;button id="add-button"&gt;  <br>
+                  &lt;div class="delete-button"> &lt;/div&gt;  <br>
+                  &lt;div id="container"> &lt;ul>&lt;/ul>&lt;/div&gt;
+                <div class="underline"></div>
+                <p>jQuery</p>
+                var $todoInput = $("#todo-input"); <br>
+                var $addButton = $("#add-button"); <br>
+                var $deleteButton = $(".delete-button"); <br>
+                var $itemList = $("#container ul")
+              </kbd>
+            </section>
+          </div>
+        </section>
+       <!-- contents 섹션 끝 -->
+      </article>
+       <!-- article 끝 -->
     </div>
+    <!-- body 컨테이너 끝 -->
   </div>
 
 </body>
