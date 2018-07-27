@@ -14,6 +14,7 @@ li {
   list-style: none;
 }
 
+
 /*
 * Base structure
 */
@@ -39,6 +40,26 @@ a {
   margin: 0px;
   color: rgb(109, 109, 109);
 }
+
+h2 {
+  font-size: 1.5em;
+  font-style: italic;
+  line-height: 40px;
+  margin : 0 0 16px 0;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-style: italic;
+  line-height: 40px;
+  margin : 0 0 16px 0;
+}
+
+p {
+  font-size: 1em;
+  margin-bottom : 14px;
+}
+
 ul {
   padding-left: 16px;
 }
@@ -104,9 +125,24 @@ ul {
   background-color: #3f2afe;
   height: 1000px;
 }
+
+.clearfix::before, .clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
 .body_container {
   padding: 70px;
 }
+
 .title {
   padding-left: 100px;
   display: inline-block;
@@ -117,10 +153,12 @@ ul {
   letter-spacing: 0.5em;
   margin: 88px auto 32px auto;
 }
+
 .title:hover {
   padding-left: 10px;
   text-decoration: red line-through;
 }
+
 .sub-title {
   padding-left: 100px;
   display: block;
