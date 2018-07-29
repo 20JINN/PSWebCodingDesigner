@@ -1,0 +1,40 @@
+body {
+  background-color: black;
+  padding: 8vw;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: white;
+}
+
+#title {
+  margin-bottom: 4vw;
+  font-size: 36px;
+}
+
+#container .item {
+  display: inline-block;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0.4;
+  position: relative;
+  width: 202px;
+  height: 158px;
+  border-radius: 4px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+#container .item .item-title {
+  position: absolute;
+  bottom: 14px;
+  font-size: 12px;
+  left: 0;
+  width: 202px;
+  z-index: -1;
+  opacity: 0;
+}
+
+#container .item img {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}

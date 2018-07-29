@@ -11,12 +11,9 @@
 </head>
 
 <body>
-
   <!--header-->
   <header class="header_gn">
-
     <!--Index-->
-
     <div class="index-container">
       <a href="../index.html">
         <div class="index">Home</div>
@@ -24,7 +21,6 @@
     </div>
     </a>
     </div>
-
     <div class="index-container">
       <a href="../files/day01.html">
         <div class="index">Day1</div>
@@ -41,7 +37,6 @@
       <a href="../files/day03.html">
         <div class="index">Day3</div>
         <div class="index-inner">Basic javascript</div>
-
       </a>
     </div>
     <div class="index-container">
@@ -51,14 +46,15 @@
       </a>
     </div>
     <div class="index-container">
-      <a href="#">
+      <a href="../files/day05.html">
         <div class="index">Day5</div>
         <div class="index-inner">jQuery</div>
       </a>
     </div>
     <div class="index-container">
-      <a href="#">
+      <a href="../files/day06.html">
         <div class="index">Day6</div>
+        <div class="index-inner">API 사용하기</div>
       </a>
     </div>
     <div class="index-container">
@@ -71,7 +67,6 @@
         <div class="index">Day8</div>
       </a>
     </div>
-
     <div class="index-container">
       <a href="../files/study.html">
         <div class="index">Study</div>
@@ -92,48 +87,222 @@
       <article>
         <!-- contents 섹션 시작 -->
         <section class="contents">
-          <header class="content-title">&lt;jQuery&gt; <p class="writer">by.Seonyu, Seung</p></header>
+          <header class="content-title">&lt;jQuery 설치 및 사용&gt; <p class="writer">by.Seonyu, Seung</p></header>
           <div class="underline"></div>
-          <div class="content-subtitle">
-            &#9728; DOM(Document Object Model) 조작을 편하게 해주는 라이브러리 + α
-          </div>
-          <div class="description">
-              <header>
-                  <h3>jQuery 설치하기</h3>
-                </header>
+          <p class="description">
+            DOM(Document Object Model)이란? 조작을 편하게 해주는 라이브러리 + α
+            <a class="reference-link">
+              https://developer.mozilla.org/ko/docs/Web/JavaScript/JavaScript_technologies_overview
+            </a>
+          </p>
+          <br>
+            <header class="content-subtitle">
+              &#9728; jQuery 설치하기
+            </header>
+            <a href="https://developers.google.com/speed/libraries/" class="reference-link ">google api library (CDN 용)</a>
+            <a href="https://code.jquery.com/jquery/" class="reference-link ">jquery 공식 사이트 (다운로드 용)</a>   
+            <br>
+            <header class="content-subtitle">&#9728; 사용법 기본</header>    
+            <p class="description">
+              jQuery에서는 $표시를 기본적으로 사용한다.
+              <br> 또한 모든 것이 javascript function으로 정의되어 있다.
+            </p>
+            <code class="example-code">
+              <span class="highlight-green">$("#아이디이름")</span>  /* html 상에서 #id로 정의한 것을 지칭할 때 사용한다. */
+              <br> <span class="highlight-green">$(".클래스이름")</span> /* html 상에서 .class로 정의한 것을 지칭할 때 사용한다. */
+              <br> <span class="highlight-green">$("태그이름")</span> /* html 상에서 tag로 정의한 것을 지칭할 때 사용한다. */
+            </code>
+            <header class="content-subtitle">예시</header>
+            <div class="underline"></div>
+            <p class="description">@html</p>
+            <!-- kbd 태그 = 유저가 취할 수 있는 input을 문자 그대로 알려줄때 쓰는 태그, 예를들어 ctrl+s를 누르세요라고 할 때 씀. -->
+            <kbd class="example-code">
+            <!-- pre태그 = 줄바꿈,공백 그대로 보여주는 태그 -->
+              &lt;input id="todo-input" type="text" &gt; <br>
+              &lt;button id="add-button"&gt;  <br>
+              &lt;div class="delete-button"> &lt;/div&gt;  <br>
+              &lt;div id="container"> &lt;ul>&lt;/ul>&lt;/div&gt;
+            </kbd>
+            <p class="description">@jQuery</p>
+            <kbd class="example-code">
+              var $todoInput = $("#todo-input"); <br>
+              var $addButton = $("#add-button"); <br>
+              var $deleteButton = $(".delete-button"); <br>
+              var $itemList = $("#container ul")
+            </kbd>
+          </section>
+          <section class="contents">
+            <header class="content-title">
+              요소 선택하기 - 2
+            </header>
+            <div class="underline"></div>
+            <p class="example-code">
+              $(".클래스이름").eq(1)
+              <br> // 같은 클래스이름을 가진 요소들 중 두 번째 요소를 선택합니다.
+              <br> // Array처럼 번호를 전달해주면 선택 할 수 있습니다.
+              <br> 
+              <br> $(".클래스이름").children()
+              <br> // 요소의 자식 요소들을 모두 선택합니다.
+              <br> 
+              <br> $(".클래스이름").first()
+              <br> // 같은 클래스이름을 가진 요소들 중 첫 번째 요소를 선택합니다.
+              <br> 
+              <br> $(".클래스이름").last()
+              <br> // 같은 클래스이름을 가진 요소들 중 마지막 요소를 선택합니다.
+              <br> 
+              <br> $(".클래스이름").find(".test")
+              <br> // 같은 클래스이름을 가진 요소의 자식들 중에 test클래스 이름을 가지고 있는 것을 찾습니다.
+            </p>
+          </section>
+          <section class="contents">
+            <header class="content-title">
+              &lt;제어하기&gt;
+            </header>
+            <div class="underline"></div>
+            <header class="content-subtitle">&#9728;show()</header>
+            <p class="example-code">
+              $("#아이디이름").show() 
+              <br> // css의 display가 none인 요소를 보이게 합니다.
+            </p>
+            <header class="content-subtitle">&#9728;hide()</header>
+            <p class="example-code">
+              $("#아이디이름").hide() 
+              <br> // css의 display를 none으로 만듭니다.
+            </p> 
+            <header class="content-subtitle">&#9728;width()</header>
+            <p class="example-code">
+              var 가로길이 = $("#아이디이름").width();
+              <br> // 요소의 width를 반환합니다.
+              <br> console.log(가로길이);
+              <br> 
+              <br> 
+              <br> $("#아이디이름").width("300px");
+              <br> // 요소의 width를 300px로 만듭니다.
+            </p>
+            <header class="content-subtitle">&#9728;height()</header>
+            <p class="example-code">
+              var 세로길이 = $("#아이디이름").height();
+              <br> // 요소의 height를 반환합니다.
+              <br> console.log(가로길이);
+              <br> 
+              <br> 
+              <br> $("#아이디이름").height("300px");
+              <br> // 요소의 height를 300px로 만듭니다.
+            </p>
+            <header class="content-subtitle">&#9728;css()</header>
+            <p class="example-code">
+              $("#아이디이름").css({"background-color": "red"}) 
+              <br>
+              <br> $("#아이디이름").css({
+              <br>   "background-color": "red",
+              <br>   "color": "blue",
+              <br> });
+            </p>
+          </section>
+          
+          <section class="contents">
+            <header class="content-title">
+              &lt;유용한 기능&gt;
+            </header>
+            <div class="underline"></div>
+            <p class="example-code">
+              $("body")<span class="highlight-green">.append</span>("&lt;div>HTML추가&lt;/div>");
+              <br>  // body태그 내용 뒤에 Parameter로 전달한 HTML을 추가합니다.
+              <br>  
+              <br>  $("body")<span class="highlight-green">.prepend</span>("&lt;div>HTML추가&lt;/div>");
+              <br>  // body태그 내용 앞에 Parameter로 전달한 HTML을 추가합니다.
+              <br>  
+              <br>  $(".클래스이름")<span class="highlight-green">.remove()</span>;
+              <br>  // 요소를 선택하여 HTML에서 삭제합니다. 
+              <br>  
+              <br>  $(".클래스이름")<span class="highlight-pink">.addClass(" 새로운클래스"</span>);
+              <br>  // 해당 요소를 선택하여 `새로운클래스`라는 클래스를 추가합니다.
+              <br>  // FROM:  &lt;div class="클래스이름">...
+              <br>  // TO  :  &lt;div class="클래스이름 <span class="highlight-pink"> 새로운클래스"</span>>...
+              <br>  
+              <br>  $(".클래스이름") <span class="highlight-blue"> .removeClass("새로운클래스"</span>);
+              <br>  // 해당 요소를 선택하여 `새로운클래스`라는 클래스가 있다면 제거합니다.
+              <br>  // FROM:  &lt;div class="클래스이름 새로운클래스>...
+              <br>  // TO  :  &lt;div class="클래스이름">...
+              <br>  
+              <br>  $(".클래스이름").hasClass("새로운클래스");
+              <br>  // 해당 요소에 `새로운클래스`가 있는지 확인합니다.
+              <br>  // true/false값을 return 해줍니다.
+            </p>
+          </section>
 
-            <section>
-              <p class="content-subtitle">설치할 수 있는 사이트</p>
-              <p> <a href="https://developers.google.com/speed/libraries/" class="underline">google api library (CDN 용)</a></p>
-              <p> <a href="https://code.jquery.com/jquery/" class="underline">jquery 공식 사이트 (다운로드 용)</a> </p>   
+          <section class="contents">
+            <header class="content-title">
+              &lt;이벤트 제어&gt;
+            </header>
+            <div class="underline"></div>
+            <header class="content-subtitle">
+              &#9728;on()
+            </header>
+            <p class="example-code">
+              $(".클래스이름").on("click", function() {
+              <br>    console.log("클릭됨");
+              <br>  });
+              <br>  
+              <br>  // 요소에 click이벤트가 on되면 뒤에 오는 기능을 실행합니다.
+            </p>
+            <header class="content-subtitle">
+              &#9728;off()
+            </header>
+            <p class="example-code">
+              $(".클래스이름").on("click", function() {
+              <br>    console.log("클릭됨");
+              <br>  });
+              <br>  
+              <br>  $(".클래스이름").off();
+              <br>  // 해당 요소에 걸린 모든 이벤트 제거
+              <br>  
+              <br>  $(".클래스이름").off("click");
+              <br>  // 해당 요소에 걸린 click 이벤트만 제거 
+            </p>
+          </section>
 
-              <p class="content-subtitle">사용법</p>    
-              <p>jQuery에서는 $표시를 기본적으로 사용한다.</p>
-              <p>또한 모든 것이 javascript function으로 정의되어 있다.</p>
-              <code class="example-code">
-                  $("#아이디이름")  /* html 상에서 #id로 정의한 것을 지칭할 때 사용한다. */
-                  <br> $(".클래스이름") /* html 상에서 .class로 정의한 것을 지칭할 때 사용한다. */
-                  <br> $("태그이름") /* html 상에서 tag로 정의한 것을 지칭할 때 사용한다. */
-              </code>
-              <p class="content-subtitle">예시</p>
-              <!-- kbd 태그 = 유저가 취할 수 있는 input을 문자 그대로 알려줄때 쓰는 태그, 예를들어 ctrl+s를 누르세요라고 할 때 씀. -->
-              <kbd class="example-code">
-                <!-- pre태그 = 줄바꿈,공백 그대로 보여주는 태그 -->
-                <p>html</p>
-                 &lt;input id="todo-input" type="text" &gt; <br>
-                  &lt;button id="add-button"&gt;  <br>
-                  &lt;div class="delete-button"> &lt;/div&gt;  <br>
-                  &lt;div id="container"> &lt;ul>&lt;/ul>&lt;/div&gt;
-                <div class="underline"></div>
-                <p>jQuery</p>
-                var $todoInput = $("#todo-input"); <br>
-                var $addButton = $("#add-button"); <br>
-                var $deleteButton = $(".delete-button"); <br>
-                var $itemList = $("#container ul")
-              </kbd>
-            </section>
-          </div>
-        </section>
+          <section class="contents">
+            <header class="content-title">
+              &lt;자주 사용 하는 이벤트&gt;
+            </header>
+            <div class="underline"></div>
+            <p class="description">
+              사실 용도에 따라 반드시 필요한 경우도 있겠지만 주료 사용 빈도가 높은 것들입니다.
+              <br>
+              <br>  click - 클릭할 때
+              <br>  keyup - 키보드 입력할 때
+              <br>  mouseenter - 마우스가 해당요소에 진입할 때
+              <br>  mouseleave - 마우스가 해당요소에서 떠날 때
+              <br>  mousemove - 마우스가 해당요소에서 움직일 때
+              <br>  resize - 리사이즈 될 때
+              <br>  scroll - 스크롤 될 때
+              <br> 
+              <br>  그 외 엄청나게 많은 이벤트가 있습니다. Standard Events 만 보세요.
+              <a class="reference-link" href="https://developer.mozilla.org/ko/docs/Web/Reference/Events">
+              Event list
+              </a>
+            </p>
+          </section>
+
+          <section class="check-container">
+            <header class="content-title">
+              &lt;Check this out!&gt;
+              <p class="writer">by.Youngjin</p>
+            </header>
+            <div class="underline"></div>
+            <p class="description">
+              강의 초반 선생님이 공유해주셨던 프론트엔드 디벨로퍼의 테크 트리 영상, 기억하시나요?
+              <br>  <a class="reference-link" href="https://www.facebook.com/nomadcoders/videos/1629678963811399/">Facebook | nomadcoders</a>
+              <br>  html/css 이후에 기본적인 javascript를 공부하고, 이후에 Jquery, ReactJS, VueJS 등 라이브러리를 공부하라는 내용이었는데요,
+              <br>  javascript부분을 짧게 훑고 지나가다보니 조금 더 공부하고, 정말 '이해'를 하고싶다는 갈증이 생기는데 어떻게 어디서부터 시작해야할 지 감이 안오더라고요. 
+              <br>  그래서 찾은 <span class="highlight-blue"> javascript30</span>!! vanilla javascript로 30가지 예제를 만들어 볼 수 있는 동영상 강의 사이트입니다.
+              <br>  영상에서도 javascript를 처음 배울 때, 꼭 순수 vanilla javascript부터 시작하라고 했었는데 요 사이트로 연습해보면 기본기를 조금 더 다질 수 있지 않을까 해요.
+              <br>  실은 저도 아직 시작 못해서 ㅎㅎ 연습 하게되면 따로 또 공유해보도록 하겠습니다.
+              <br>  <a class="reference-link" href="https://javascript30.com/">Javascript30</a>
+              <br>  여러분도 예제 따라해보시고 공유해주세요!
+            </p>
+          </section>
        <!-- contents 섹션 끝 -->
       </article>
        <!-- article 끝 -->
