@@ -174,7 +174,7 @@ ul {
   background-color: transparent;
   color: #fff;
 }
-.guess1 {
+#guess1 {
   background-color: #9176ff;
   width: 520px;
   height: 442px;
@@ -182,12 +182,12 @@ ul {
   float: left;
   margin-left: 20px;
 }
-.guess1:hover {
+#guess1:hover {
   background-color: #9176ff;
   transform: scale(0.0001) rotate(360deg);
   transition: all 25s ease-out;
 }
-.guess2 {
+#guess2 {
   background-color: #ff4700;
   width: 180px;
   height: 180px;
@@ -197,7 +197,7 @@ ul {
   left: 800px;
   transform: rotate(45deg);
 }
-.guess2:hover {
+#guess2:hover {
   background-color: rgb(212, 0, 255);
   width: 180px;
   height: 180px;
@@ -208,7 +208,7 @@ ul {
   transform: rotate(3000deg);
   transition: all 2s ease-in;
 }
-.guess3 {
+#guess3 {
   background-color: rgb(255, 213, 27);
   width: 240px;
   height: 360px;
@@ -217,7 +217,7 @@ ul {
   top: 640px;
   right: 60px;
 }
-.guess3:hover {
+#guess3:hover {
   background-color: rgb(255, 213, 27);
   width: 240px;
   height: 360px;
@@ -248,13 +248,27 @@ ul {
   transform: rotate(12600deg);
   transition: all 1s;
 }
+#practical-practice{
+  background-color: #000;
+  height: 56px;
+  color: rgb(255, 213, 27);
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 56px;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  position: relative;
+  padding: 0 32px;
+  top: 232px;
+  left: -160px;
+}
+#practical-practice:hover{
+  box-shadow: 0 -5px 40px 0 rgba(0, 0, 0, 0.39);
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
 
 /*내용영역*/
-
-.contributors div {
-  color: rgb(44, 33, 199);
-  font-weight: 900;
-}
 
 .summary_title {
   color: #0e0436;
@@ -262,6 +276,7 @@ ul {
   font-size: 72px;
   line-height: 120px;
   font-weight: 900;
+  padding: 0 16px;
 }
 
 a.reference-link {
@@ -305,7 +320,6 @@ a.reference-link-sub {
   margin-bottom: 8px;
 }
 .description {
-  margin-bottom: 16px;
   display: block;
 }
 .example-code {
@@ -344,6 +358,16 @@ a.reference-link-sub {
   width: 70%;
   padding: 8px 16px;
 }
+.description-list{
+  background-color: #f1f4fd;
+  padding: 24px 32px;
+  border-radius: 16px;
+}
+.description-list li{
+  list-style: disc;
+  line-height: 24px;
+  padding: 8px 0;
+}
 
 .example-img img {
   width: 100%;
@@ -361,6 +385,7 @@ a.reference-link-sub {
 #float-right {
   display: inline-block;
 }
+
 
 /*shapes*/
 #margin-ex-container {
