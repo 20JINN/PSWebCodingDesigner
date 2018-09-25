@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="../index.css" />
+</head>
+    <body>
+
+        <!--header-->
+        <header class="header_gn">
+
+            <!--Index-->
+            <div class="index-container">
+                <a href="../index.html">
+                    <div class="index">Home</div>
+                    <div class="index-inner">환영합니다!</div>
+                </a>
+            </div>
+
+            <div class="index-container">
+                <a href="../files/day01.html">
+                    <div class="index">Day1</div>
+                    <div class="index-inner">오리엔테이션 + html/CSS</div>
+                </a>
+            </div>
+
+            <div class="index-container">
+                <a href="../files/day02.html">
+                    <div class="index">Day2</div>
+                    <div class="index-inner">Basic CSS Outline2</div>
+                </a>
+            </div>
+
+            <div class="index-container">
+                <a href="../files/day03.html">
+                    <div class="index">Day3</div>
+                    <div class="index-inner">Basic javascript</div>
+                </a>
+            </div>
+
+            <div class="index-container">
+                <a href="../files/day04.html">
+                    <div class="index">Day4</div>
+                    <div class="index-inner">함수 / f(x)</div>
+                </a>
+            </div>
+
+            <div class="index-container">
+                <a href="../files/day05.html">
+                    <div class="index">Day5</div>
+                    <div class="index-inner">jQuery</div>
+                </a>
+            </div>
+
+            <div class="index-container">
+                <a href="#">
+                    <div class="index">Day6</div>
+                </a>
+            </div>
+
+            <div class="index-container">
+                <a href="#">
+                    <div class="index">Day7</div>
+                </a>
+            </div>
+
+            <div class="index-container">
+                <a href="#">
+                    <div class="index">Day8</div>
+                </a>
+            </div>
+
+            <div class="index-container">
+                <a href="../files/study.html">
+                    <div class="index">Study</div>
+                </a>
+            </div>
+
+            <div class="index-container">
+              <a href="./files/afterStudy.html">
+                <div class="index">AfterStudy</div>
+              </a>
+            </div>
+            <!-- 콘텐츠 콘테이너 끝 -->
+        </header>
+
+
+
+<div class="wrapper" id="wrapper_bg">
+    <style>
+        .select {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            color: white;
+        }
+
+        .description,
+        .problem-title,
+        .answer,
+        .section,
+        .problem {
+            margin-top: 30px;
+        }
+
+        .problem-title,
+        .section {
+            font-weight: 700;
+        }
+        .summary {
+          margin-bottom : 40px;
+        }
+        .musicPlay {
+          width : 60px;
+          height : 60px;
+          background : black;
+          color : white;
+          margin-left : 50px;
+          float: right;
+          font-size: 14px;
+        }
+
+        .musicPause {
+          width : 60px;
+          height : 60px;
+          background : black;
+          color : white;
+          margin-left : 100px;
+          float: right;
+          font-size: 14px;
+        }
+    </style>
+
+
+    <div class="body-container">
+        <div class="clearfix">
+        </div>
+        <div class="body_container">
+            <div class="contents-container">
+                <audio  id="play">
+                    <source src="afterPlay.mp3" type="audio/mpeg">
+                    </audio>
+             
+                <div class="summary">
+                    BGM도 있어요! 
+                    <span><button class="musicPlay">음악 켜기</button></span>
+                    <span><button class="musicPause">음악 끄기</button></span>
+                </div>
+
+                <div class="contents">
+                    <div class="content-title">수업이 끝나고 난 뒤 조용히 스터디에 남아..
+                        <p class="writer">by.seung</p>
+                    </div>
+                    <div class="underline"></div>
+                    <div class="content-subtitle">&#9728; Mission : <a href="https://javascript30.com/">javascript 30</a> 익히기!
+               
+                    </div>
+                    <div class="content-subtitle">
+                        1) Drum 만들기
+                    </div>
+                        <div class="description">
+                            <p>추후에 업로드 할게요!</p>
+                        </div>
+
+                    <div class="content-subtitle">
+                        2) clock 만들기
+                    </div>
+                        <div class="description">
+                            <p><a href="../practice/seung_as_02/clock.html">시계 보여줄게요. 클릭하세요</a></p>
+                        </div>
+                        
+                </div>
+              </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+<!-- 자바스크립트 -->
+<script>
+
+var player = document.querySelector('.musicPlay');
+var pause = document.querySelector('.musicPause');
+var music = document.querySelector('#play');
+
+function playAudio(){
+  music.play();
+}
+
+player.addEventListener("click",function(){
+  playAudio();
+})
+ 
+function pauseAudio() { 
+    music.pause(); 
+}
+
+
+pause.addEventListener("click", function() {
+  pauseAudio();
+  });
+</script>
+</div>
+</div>
+</body>
+
+</html>
