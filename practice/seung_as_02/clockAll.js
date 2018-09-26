@@ -113,6 +113,12 @@
             
                   $('ul.tabs li').removeClass('currentTab');
                   $(this).addClass('currentTab');
+                  // tweenmax 삽질기록
+                  // TweenMax.to(line, 0.6, {
+                  //   x: 80,
+                  //   delay: 0.05,
+                  //   ease: Power4.easeOut,
+                  // });
                   
                     var tabClicked = $(this).data("tab-index");
             
