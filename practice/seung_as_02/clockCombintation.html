@@ -54,12 +54,16 @@
     </div>
 
     <script>
-      const hand = document.querySelectorAll('.hand');
+            const hand = document.querySelectorAll('.hand');
       const secondHand = document.querySelectorAll('.second-hand');
       const minHand = document.querySelectorAll('.min-hand');
       const hourHand = document.querySelectorAll('.hour-hand');
       const digital = document.querySelector('.digital');
+
       function setDate(){
+
+  
+
         // date라는 object 생성
         const now = new Date();
         // getSeconds는 초를 측정하는 method
@@ -96,10 +100,14 @@
          digital.innerHTML = hh +": " + mm +": "+ ss; 
           // 분, 시가 바뀔 때 띠용 하고 시침 분침이 튕기는 현상 방지
           if (seconds === 0) { 
-            minHand.style.transition = "all 0s";
-            secondHand.style.transition = "all 0s";
-            hourHand.style.transition = "all 0s";
+            minHand[0].style.transition = "all 0s";
+            minHand[1].style.transition = "all 0s";
+            secondHand[0].style.transition = "all 0s";
+            secondHand[1].style.transition = "all 0s";
+            hourHand[0].style.transition = "all 0s";
+            hourHand[1].style.transition = "all 0s";
           }
+          
         }
       
       setInterval(setDate,1000);
