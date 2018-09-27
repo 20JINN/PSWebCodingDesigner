@@ -83,8 +83,9 @@ ul {
 /* desktop  & ipad? */
 @media screen 
   and (min-device-width: 1024px) 
-  and (max-device-width: 1921px) 
-  { 
+  /* and (max-device-width: 1921px)  */
+  /* and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) */ { 
 
     .back {
       color: #ffffff;
@@ -210,7 +211,8 @@ ul {
 @media only screen 
   and (min-device-width: 360px) 
   and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
+  /* and (-webkit-min-device-pixel-ratio: 2) */
+  {  
 
     .back {
       color: #ffffff;
