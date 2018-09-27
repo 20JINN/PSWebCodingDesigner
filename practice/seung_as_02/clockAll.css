@@ -83,9 +83,8 @@ ul {
 /* desktop  & ipad? */
 @media screen 
   and (min-device-width: 1024px) 
-  and (max-device-width: 100vw) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { 
+  and (max-device-width: 1921px) 
+  { 
 
     .back {
       color: #ffffff;
